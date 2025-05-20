@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Convergence&display=swap');
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  display: flex;
+  justify-content: center;
+  background-image: url(img-src/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: 'Convergence', sans-serif;
+}
+
+.mainInterface{
+  position: relative;
+  background-color: whitesmoke;
+  margin-top: 10rem;
+  height: 500px;
+  width: 750px;
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 7px;
+  box-shadow: 0 0 30px -10px  black;
+}
+
+.loginArea{
+  position: absolute;
+  padding: 3em 3em;
+  height: 500px;
+  width: 600px;
+  left: 0;
+  /**border: 1px solid green;**/
+  transition: 0.5s;
+}
+
+.loginText{
+  position: absolute;
+  left: 80px;
+  width: 3.3em;
+  text-align: center;
+  background-color: whitesmoke;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.outerLine{
+  position: absolute;
+  left: 50px;
+  top: 70px;
+  height: 360px;
+  width: 450px;
+  border: 3px solid black;
+  border-radius: 15px;
+  
+}
+
+.form{
+  position: relative;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-size: 2rem;
+  /**border: 1px solid  yellow;**/
+}
+
+.input{
+  position: block;
+  margin-top: 50px;
+  padding-left: 20px;
+  background: none;
+  outline: none;
+  height: 60px;
+  width: 350px;
+  font-size: inherit;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.formLabels{
+  position: absolute;
+  left: 5px;
+  margin-top: 62px;
+  margin-left: 20px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  font-size: inherit;
+  transition: 0.5s;
+}
+/**
+#user:focus ~ #userLabel{
+  margin-top: 40px;
+  margin-left: 10px;
+  padding: 0 0.2rem;
+  font-size: 1.2rem;
+  
+}**/
+.userLabel.active{
+  margin-top: 40px;
+  margin-left: 10px;
+  padding: 0 0.2rem;
+  font-size: 1.2rem;
+}
+.passLabel.active{
+  margin-top: 40px;
+  margin-left: 10px;
+  padding: 0 0.2rem;
+  font-size: 1.2rem;
+}
+
+.logBtn{
+  display: block;
+  margin-top: 50px;
+  background-color: black;
+  height: 65px;
+  width: 110px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
+
+.blackbox{
+  display: flex;
+  align-items: center;
+  position: absolute;
+  background-color: black;
+  right: -350px;
+  height: 500px;
+  width: 500px;
+  border-left: 6px solid #F0944F ;
+  border-right: 6px solid #F0944F ;
+  transform: skew(-20deg);
+  transition: 0.5s;
+}
+
+.signUpTxt{
+  position: absolute;
+  color: white;
+  left: 5px;
+  font-size: 3.6rem;
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+}
+
+#arrow-right{
+  position: absolute;
+  background: none;
+  background-image: url(img-src/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  left: 100px;
+  bottom: 35px;
+  height: 70px;
+  width: 70px;
+  transform: skew(20deg);
+  border: none;
+  border-radius: 100%;
+}
+
+#arrow-left{
+  position: absolute;
+  background: none;
+  background-image: url(img-src/arrow-right.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  left: 300px;
+  top: 35px;
+  rotate: 180deg;
+  height: 70px;
+  width: 70px;
+  transform: skew(20deg);
+  border: none;
+  border-radius: 100%;
+}
+/** JS SCRIPT **/
+.blackbox.active{
+  right: 600px;
+}
+
+.loginArea.active{
+  left: -600px;
+}
+
+.signUpTxt.active{
+  left: 425px;
+}
+/** JS script **/
+
+/** REGISTER **/
+.regArea{
+  position: absolute;
+  right: -600px;
+  padding: 3em 3em;
+  height: 500px;
+  width: 600px;
+  /**border: 1px solid green;**/
+  transition: 0.5s;
+}
+
+.regArea.active{
+  right: 0;
+}
+
+.regText{
+  position: absolute;
+  right: 80px;
+  width: 4em;
+  text-align: center;
+  background-color: whitesmoke;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.outerLineReg{
+  position: absolute;
+  right: 50px;
+  top: 70px;
+  height: 360px;
+  width: 450px;
+  border: 3px solid black;
+  border-radius: 15px;
+}
+
+.formReg{
+  position: relative;
+  margin-top: 20px;
+  margin-left: 80px;
+  font-size: 2rem;
+  /**border: 1px solid  yellow;**/
+}
+
+.regBtn{
+  display: block;
+  margin-top: 50px;
+  background-color: black;
+  height: 65px;
+  min-width: 110px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+}
