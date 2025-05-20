@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <title>AMS Login Page</title>
+</head>
+<body>
+  <div class="mainInterface">
+    <div class="loginArea">
+      <div class="outerLine"></div>
+      <p class="loginText">LOGIN</p>
+      
+      <form class="form" id="logForm">
+        <input type="text" id="userLog" class="input user" name="username" placeholder="">
+        <label for="userLog" class="formLabels userLabel">Username</label>
+        <input type="password" id="passLog" class="input pass" name="password" placeholder="">
+        <label for="passLog" class="formLabels passLabel">Password</label>
+        <input type="submit" class="logBtn" value="LOGIN">
+      </form>
+    </div>
+    
+    <div class="blackbox">
+      <div class="signUpTxt">SIGN-UP</div>
+      <button id="arrow-right"></button>
+      <button id="arrow-left"></button>
+    </div>
+    
+    <div class="regArea">
+      <div class="outerLineReg"></div>
+      <p class="regText">SIGN-UP</p>
+      
+      <form class="formReg" id="regForm">
+        <input type="text" id="userReg" class="input user" name="username" placeholder="">
+        <label for="userReg" id="userRegLabel" class="formLabels userLabel">Username</label>
+        <input type="password" id="passReg" class="input pass" name="password" placeholder="">
+        <label for="passReg" id="passRegLabel" class="formLabels passLabel">Password</label>
+        <input type="submit" class="regBtn" value="REGISTER">
+      </form>
+    </div>
+    
+  </div>
+</body>
+<script src="assets/js/script.js"></script>
+</html>
