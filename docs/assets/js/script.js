@@ -112,7 +112,9 @@ logBtn.addEventListener("click", ()=> {
   }
 });
 **/
-function myfunc(){
+function myfunc(event){
+  event.preventDefault();
+  
   if(userLog.value === altUser && passLog.value === altPass){
       window.location.href = "home.html";
   }else{
