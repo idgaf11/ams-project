@@ -103,7 +103,7 @@ const userLog = document.getElementById("userLog");
 const passLog = document.getElementById("passLog");
 const altUser = "admin";
 const altPass = "1234";
-
+/**
 logBtn.addEventListener("click", ()=> {
   if(userLog.value === altUser && passLog.value === altPass){
       window.location.href = "home.html";
@@ -111,3 +111,11 @@ logBtn.addEventListener("click", ()=> {
     alert("Something Wrong!")
   }
 });
+**/
+function myfunc(){
+  if(userLog.value === altUser && passLog.value === altPass){
+      window.location.href = "https://m.youtube.com/";
+  }else{
+    alert("Something Wrong!")
+  }
+}
