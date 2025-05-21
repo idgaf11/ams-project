@@ -114,7 +114,7 @@ logBtn.addEventListener("click", ()=> {
 **/
 function myfunc(){
   if(userLog.value === altUser && passLog.value === altPass){
-      window.location.href = "https://m.youtube.com/";
+      window.location.href = "home.html";
   }else{
     alert("Something Wrong!")
   }
